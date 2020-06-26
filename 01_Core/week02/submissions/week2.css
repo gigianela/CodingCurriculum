@@ -41,7 +41,7 @@ ul.rainbow {
 }
 
 /*Macaroon island*/
-#blog-containn {
+#blog-contain {
     line-height: 10px;
     width: 500px;
 }
@@ -100,12 +100,6 @@ header nav ul li a:hover {
     line-height: 40px;
     top: 90px;
     left: -20px;
-}
-
-.dd-content li a {
-    padding: 0;
-    margin: 0;
-    
 }
 
 .drop-down:hover .dd-content {
