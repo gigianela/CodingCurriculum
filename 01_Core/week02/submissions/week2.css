@@ -1,0 +1,145 @@
+/* CSS reset*/
+body {
+    margin: 0 20px 0;
+    padding: 0;
+    background-color: beige;
+
+}
+
+/*rainbow*/
+
+ul li {
+    font-size: 20px;
+}
+
+ul.rainbow {
+    font-weight: bold;
+}
+
+
+
+#red {
+    color: #ff0000;
+}
+#orange {
+    color: #ffa500;
+}
+#yellow {
+    color: #ffff00;
+}
+#green {
+    color: #008000;
+}
+#blue {
+    color: #0000ff;
+}
+#indigo {
+    color: #4b0082;;
+}
+#violet {
+    color: #ee82ee;
+}
+
+/*Macaroon island*/
+#blog-containn {
+    line-height: 10px;
+    width: 500px;
+}
+
+.text-contain {
+    width: 600px;
+}
+
+
+
+/*nav*/
+.container {
+    width: 924px;
+    margin: 0 auto;
+    padding: 30px 24px;
+
+}
+
+header nav {
+    text-align: center;
+
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    line-height: 150px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #7fffd4;
+    padding-top: 20px;
+}
+
+/*drop down*/
+
+.drop-down {
+    position: relative;
+}
+.dd-content {
+    position: absolute;
+    display: none;
+    line-height: 40px;
+    top: 90px;
+    left: -20px;
+}
+
+.dd-content li a {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.drop-down:hover .dd-content {
+    display: block;
+}
+
+
+
+.form-container {
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
