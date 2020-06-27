@@ -1,5 +1,5 @@
 
-let cartoons = ['Patrick Star', 'Angelica Pickles', 'Jessica Rabbit', 'Johnny Bravo']
+var cartoons = ['Patrick Star', 'Angelica Pickles', 'Jessica Rabbit', 'Johnny Bravo']
 
 function compare(a, b) {
     var splitA = a.split(" ");
@@ -16,5 +16,19 @@ function compare(a, b) {
 var sorted = cartoons.sort(compare);
 console.log(sorted); // checking to see that it works
 
-// things i think will work -- 
-// getElementByID or document.querySelector
+
+
+function sortNames() {
+    var text = '';
+    sorted.forEach (function (el) {
+    var name = el.split (' ');
+    text += `<li> ${name[0]} <strong> ${name[1]} </strong> </li>`;
+    })
+
+    document.getElementById("cartoon-list").innerHTML = text;
+
+}
+
+
+
+

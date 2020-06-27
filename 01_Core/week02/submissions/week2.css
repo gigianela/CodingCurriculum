@@ -236,23 +236,26 @@ footer.footer {
     color: black;
 }
 
-.list {
+#cartoon-list {
     list-style: none;
     border: double 5px hotpink;
     width: 400px;
     padding: 20px;
 }
 
-.list li {
+#cartoon-list li {
     font-size: 30px;
     margin: 0 0 0 50px;
     
 }
 
-.list strong {
+#cartoon-list strong {
     color: red;
 }
 
+#button:active {
+    transform:translateY(4px);
+}
 
 
 
