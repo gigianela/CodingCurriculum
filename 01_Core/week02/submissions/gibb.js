@@ -1,4 +1,6 @@
 
+//gibberish page
+
 var cartoons = ['Patrick Star', 'Angelica Pickles', 'Jessica Rabbit', 'Johnny Bravo']
 
 function compare(a, b) {
@@ -18,6 +20,8 @@ console.log(sorted); // checking to see that it works
 
 
 
+
+
 function sortNames() {
     var text = '';
     sorted.forEach (function (el) {
@@ -28,6 +32,9 @@ function sortNames() {
     document.getElementById("cartoon-list").innerHTML = text;
 
 }
+
+
+
 
 
 

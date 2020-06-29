@@ -6,7 +6,7 @@ body {
 
 }
 
-/*rainbow*/
+/*rainbow page*/
 
 ul li {
     font-size: 20px;
@@ -16,7 +16,7 @@ ul.rainbow {
     font-weight: bold;
 }
 
-
+/* colors of text */
 
 #red {
     color: #ff0000;
@@ -40,7 +40,7 @@ ul.rainbow {
     color: #ee82ee;
 }
 
-/*Macaroon island*/
+/*Macaroon island page*/
 #blog-containn {
     line-height: 10px;
     width: 500px;
@@ -91,7 +91,7 @@ header nav ul li a:hover {
     padding-top: 20px;
 }
 
-/*drop down*/
+/*drop down on recipe text*/
 
 .drop-down {
     position: relative;
@@ -119,7 +119,6 @@ header nav ul li a:hover {
 .form-container {
     padding: 50px 50px;
     width: 600px;
-   
 }
 
 #contact-info {
@@ -149,7 +148,7 @@ p.lead {
 
 }
 
-/*sidebar*/
+/*sidebar - in macaroon island page*/
 
 .sidebar {
     height: 100%; 
@@ -207,18 +206,17 @@ footer.footer {
     padding: 60px 0 0;
 }
 
- 
- #copyright {
+
+#copyright {
     width: 240px;
     padding: 0;
- }
+}
 
- .resize {
-     width: 40px;
-     height: auto;
+.resize {
+width:40px;
+height: auto;
+}
 
- }
- 
 .social-media {
     list-style: none;
 }
