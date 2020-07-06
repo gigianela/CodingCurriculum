@@ -21,15 +21,20 @@ ul.rainbow {
 #red {
     color: #ff0000;
 }
+
+
 #orange {
     color: #ffa500;
 }
+
 #yellow {
     color: #ffff00;
 }
+
 #green {
     color: #008000;
 }
+
 #blue {
     color: #0000ff;
 }
@@ -40,8 +45,9 @@ ul.rainbow {
     color: #ee82ee;
 }
 
+
 /*Macaroon island page*/
-#blog-containn {
+#blog-contain {
     line-height: 10px;
     width: 500px;
 }
@@ -257,7 +263,13 @@ height: auto;
 
 
 
-
+#text-area {
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: 20px 0;
+    
+}
 
 
 
