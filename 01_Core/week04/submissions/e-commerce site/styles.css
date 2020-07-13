@@ -54,10 +54,33 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+
 #main-nav a:hover {
     color: #000;
     padding-top: 20px;
 }
+
+/*Mobile
+@media only screen and (max-width:700px) {
+    #DT-nav {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    display: block;
+}
+.nav-content {
+    display: none;
+}
+
+.nav-content #navMobile {
+display: none;
+}
+
+*/ 
+
+
 
 /*home page****************************************/
 
@@ -114,6 +137,42 @@ body {
     left: -1800px;
 }
 
+
+
+#feature-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+.new-arrivals {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 50px auto auto 10px;
+}
+
+.featured-images {
+    display: flex; 
+    flex-direction: row;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    text-align: center;
+}
+
+.features {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+#ft-pic-1, #ft-pic-2, #ft-pic-3 {
+    padding: 8px;
+}
 /*text above slider*/
 #lead {
     color: #bc8f8f;
@@ -173,11 +232,18 @@ body {
     width: 250px;
     height: 150px;
     margin: 20px 0;
+    border-radius: 15px;
 }
 
 .hdyhau {
     display: block;
     padding: 5px;
+}
+
+#firstName, #lastName, #email, #phone {
+    border-radius: 15px;
+    width: 150px;
+    height: 20px;
 }
 
 
@@ -201,7 +267,7 @@ body {
 /*about page*****************************/
 
 #about-page {
-    background: url("images/test5.png") top left repeat;
+    background: url("images/test5.png") left bottom repeat;
 }
 
 
@@ -218,6 +284,7 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /*about us page | image text*/
@@ -254,6 +321,116 @@ body {
 #about-image1, #about-image2, #about-image3 {
     padding: 5px;
 
+}
+
+/*Shop/Products Page*******************************/
+.products { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+#quantity {
+    margin: 0 auto 40px;
+    padding: 2px;
+}
+
+.sort-prods {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+input[type=button] {
+    background-color: rgb(94, 93, 93);
+    border: none;
+    border-radius: 15px; 
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Comic Sans Condensed', sans-serif;
+}
+
+
+/*search bar******************/
+
+
+.s-bar {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input.search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+
+.s-bar:hover {
+    width: 200px;
+    cursor: pointer;
+}
+
+.s-bar:hover input {
+    display: block;
+}
+
+.s-bar:hover .fa {
+    background: #07051a;
+    color: white;
+}
+
+
+
+/*product details page****************/
+
+#product {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+li {
+    list-style: none;
 }
 
 

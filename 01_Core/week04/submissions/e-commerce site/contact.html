@@ -7,9 +7,18 @@
         <link href="normalize.css" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+
     </head>
 
     <body class="contact-page">  
+
+        <form class="s-bar" action="">
+            <input class="search" type="search">
+            <i class="fa fa-search"></i>
+        </form><!--end-search-bar-->
 
     <div class="container">
 		<header id="main-nav">
@@ -35,22 +44,22 @@
             <legend id="contact">Questions? Write us!</legend>
             <div class="contact-text">
             <label for="firstName">First Name:</label> 
-            <input type="text" id="firstName" placeholder="Jane">
+            <input type="text" id="firstName" placeholder=" Jane" required>
             </div>
             <div class="contact-text">
             <label for="lastName">Last Name:</label> 
-            <input type="text" id="lastName" placeholder="Doe">
+            <input type="text" id="lastName" placeholder=" Doe" required>
             </div>
             <div class="contact-text">
             <label for="email">Email:</label> 
-            <input type="text" id="email" placeholder="gotmyvanson@aol.com">
+            <input type="text" id="email" placeholder=" gotmyvanson@aol.com" required>
             </div>
             <div class="contact-text">
             <label for="phone">Phone:</label> 
-            <input type="text" id="phone" placeholder="(305)123-4567">
+            <input type="text" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" (305)123-4567" required>
             </div>
             <div class="contact-text">
-            <label for="contact">Preferred contact method</label> 
+            <label class ="hdyhau" for="contact">Preferred contact method</label> 
             <input id="Call" type="radio" name="contact">
             <label for="Call">Call</label> 
             <input id="text" type="radio" name="contact">
@@ -69,7 +78,7 @@
             </div>
             <div class="text-area">
             Message:
-                <textarea id="message"></textarea>
+                <textarea placeholder="Smack some letters together! We can't wait to hear from you!" id="message"></textarea>
             </div>
             <div id="submit-reset">
             <input type="submit" value="Save">
