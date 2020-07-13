@@ -60,25 +60,54 @@ body {
     padding-top: 20px;
 }
 
-/*Mobile
-@media only screen and (max-width:700px) {
-    #DT-nav {
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .DT-nav {
         display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    .nav-links {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-nav.icon {
+        float: left;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #navMobile {
+        display: none;
+        padding: 5px;
+        text-align: end;
+        margin: 0;
     }
 }
 
-.mobile-nav {
-    display: block;
-}
 .nav-content {
     display: none;
 }
 
 .nav-content #navMobile {
-display: none;
+    display: none;
 }
 
-*/ 
 
 
 
@@ -107,9 +136,9 @@ display: none;
 }
 
 .slider-image {
-    float: left; 
+    float: left;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .btn-images {
@@ -125,15 +154,15 @@ display: none;
     background-color: #fffff0;
 }
 
-#slider-image-1:target ~ .image-container{
+#slider-image-1:target~.image-container {
     left: 0px;
 }
 
-#slider-image-2:target ~ .image-container{
+#slider-image-2:target~.image-container {
     left: -900px;
 }
 
-#slider-image-3:target ~ .image-container{
+#slider-image-3:target~.image-container {
     left: -1800px;
 }
 
@@ -144,6 +173,7 @@ display: none;
     margin-right: auto;
     text-align: center;
     position: relative;
+
 }
 
 .new-arrivals {
@@ -155,9 +185,11 @@ display: none;
 }
 
 .featured-images {
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    width: 1100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 30px 24px;
     text-align: center;
@@ -170,9 +202,12 @@ display: none;
 
 }
 
-#ft-pic-1, #ft-pic-2, #ft-pic-3 {
+#ft-pic-1,
+#ft-pic-2,
+#ft-pic-3 {
     padding: 8px;
 }
+
 /*text above slider*/
 #lead {
     color: #bc8f8f;
@@ -185,7 +220,6 @@ display: none;
     font-size: 50px;
     font-weight: bold;
     z-index: 1
-    
 }
 
 /*contact page******************************************/
@@ -197,9 +231,9 @@ display: none;
 }
 
 .form-container {
-    /*position: relative;
+    position: relative;
     right: -260px;
-    margin: 0 auto;*/
+    margin: 0 auto;
     height: 800px;
     /*width: 650px;*/
     padding: 20px;
@@ -227,6 +261,7 @@ display: none;
     margin: 10px auto;
     padding: 10px 0;
 }
+
 #message {
     display: block;
     width: 250px;
@@ -240,7 +275,10 @@ display: none;
     padding: 5px;
 }
 
-#firstName, #lastName, #email, #phone {
+#firstName,
+#lastName,
+#email,
+#phone {
     border-radius: 15px;
     width: 150px;
     height: 20px;
@@ -251,7 +289,7 @@ display: none;
 
 .contact-image {
     /*position: absolute;*/
-    float: left; 
+    float: left;
     text-align: center;
     margin: 0 20px 0 0;
     /*left: 40px;
@@ -264,12 +302,23 @@ display: none;
     display: table;
 }
 
+fieldset {
+    width: 600px;
+}
+
+
+
 /*about page*****************************/
 
 #about-page {
     background: url("images/test5.png") left bottom repeat;
 }
 
+#about-container {
+    text-align: center;
+    width: 1000px;
+    margin-left: 300px;
+}
 
 /*about us page | opening text*/
 .all-headers {
@@ -311,22 +360,26 @@ display: none;
 /*about us page | images*/
 
 .about-images {
-    margin: 20px -50px;
+    margin: 20px;
+    margin-left: 300px;
     width: 1000px;
     height: 400px;
     display: flex;
     flex-direction: row;
+    text-align: center;
 }
 
-#about-image1, #about-image2, #about-image3 {
+#about-image1,
+#about-image2,
+#about-image3 {
     padding: 5px;
 
 }
 
 /*Shop/Products Page*******************************/
-.products { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     padding: 20px;
 }
@@ -345,7 +398,7 @@ display: none;
 input[type=button] {
     background-color: rgb(94, 93, 93);
     border: none;
-    border-radius: 15px; 
+    border-radius: 15px;
     color: white;
     text-decoration: none;
     padding: 7px;
@@ -362,7 +415,7 @@ input[type=button] {
     position: absolute;
     top: 10%;
     left: 10%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
     width: 50px;
     height: 50px;
@@ -377,7 +430,8 @@ input.search {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;;
+    width: 100%;
+    ;
     height: 42.5px;
     line-height: 30px;
     outline: 0;
@@ -432,5 +486,3 @@ input.search {
 li {
     list-style: none;
 }
-
-

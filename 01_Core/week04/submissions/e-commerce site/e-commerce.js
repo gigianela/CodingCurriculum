@@ -1,9 +1,9 @@
 // mobile nav fxn
 
 function mobileNav() {
-    var x= document.getElementById("navMobile");
+    var x = document.getElementById("navMobile");
     if (x.style.display === "block") {
-    x.style.display = "none";
+        x.style.display = "none";
     } else {
         x.style.display = "block";
     }
