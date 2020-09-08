@@ -14,7 +14,11 @@ body {
     padding: 0;
     background-color: whitesmoke;
 }
-
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center
+}
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -23,6 +27,9 @@ body {
 }
 
 /*Nav bar*/
+
+
+.logo {}
 
 #main-nav {
     text-align: center;

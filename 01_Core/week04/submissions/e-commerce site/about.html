@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Onyx | About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="styles.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
@@ -17,19 +19,39 @@
 </head>
 
 
+<div class="container">
 
-<body id="about-page">
-    <form class="s-bar" action="">
-        <input class="search" type="search">
-        <i class="fa fa-search"></i>
-    </form>
-    <!--end-search-bar-->
+    <body id="about-page">
+        <form class="s-bar" action="">
+            <input class="search" type="search">
+            <i class="fa fa-search"></i>
+        </form>
+        <!--end-search-bar-->
 
-    <div class="container">
+        <div class="container">
 
 
 
-        <header id="main-nav">
+            <header id="main-nav">
+
+                <form class="s-bar" action="">
+                    <input class="search" type="search">
+                    <i class="fa fa-search"></i>
+                </form>
+                <!--end-search-bar-->
+
+                <nav class="DT-nav">
+                    <ul id="nav-list">
+                        <li class="navbar-text"><a href="about.html">About</a></li>
+                        <li class="navbar-text"><a href="products.html">Shop</a></li>
+                        <li class="navbar-text"><a href="index.html">Home</a></li>
+                        <li class="navbar-text"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <header class="mobile-nav">
 
             <form class="s-bar" action="">
                 <input class="search" type="search">
@@ -37,42 +59,24 @@
             </form>
             <!--end-search-bar-->
 
-            <nav class="DT-nav">
-                <ul id="nav-list">
-                    <li class="navbar-text"><a href="about.html">About</a></li>
-                    <li class="navbar-text"><a href="products.html">Shop</a></li>
-                    <li class="navbar-text"><a href="homepage.html">Home</a></li>
-                    <li class="navbar-text"><a href="contact.html">Contact</a></li>
-                </ul>
+            <nav>
+                <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="nav-content"></ul>
+
+                <div id="navMobile">
+                    <li class="nav-links"><a href="index.html" class="active">Home</a></li>
+                    <li class="nav-links"><a href="about.html">About</a></li>
+                    <li class="nav-links"><a href="products.html">Shop</a></li>
+                    <li class="nav-links"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
-    </div>
-
-    <header class="mobile-nav">
-
-        <form class="s-bar" action="">
-            <input class="search" type="search">
-            <i class="fa fa-search"></i>
-        </form>
-        <!--end-search-bar-->
-
-        <nav>
-            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <ul class="nav-content"></ul>
-
-            <div id="navMobile">
-                <li class="nav-links"><a href="homepage.html" class="active">Home</a></li>
-                <li class="nav-links"><a href="about.html">About</a></li>
-                <li class="nav-links"><a href="products.html">Shop</a></li>
-                <li class="nav-links"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+        
         <div id="about-container">
+            <main class="main-content" style="padding-left: 200px;">
             <h1 class="all-headers">Allow us to <span id="strike">re-</span>introduce ourselves.</h1>
             <p class="paragraphs">We are ONYX. We canvas the Earth searching for the finest materials, fabrics, &amp;
                 stones to create a seamless, elegant, yet simple look. We're not monsters, therefore all of our products
@@ -85,7 +89,7 @@
 
             <div id="about-image1">
                 <img src="images/aboutimage1.jpg">
-                <div class="about-me-info">
+                <div class="about-me-info" alt="Devon McLatte">
                     <h4 class="all-names">Devon McLatte</h4>
                     <p class="paragraphs"><span class="job-title">Creative Director |</span> Equipped with an
                         unstoppable mind filled with ideas, Devon is our heart &amp; soul.</p>
@@ -94,7 +98,7 @@
 
             <div id="about-image2">
                 <img src="images/aboutimage2.jpg">
-                <div class="about-me-info">
+                <div class="about-me-info" alt="Gia NitroBrew">
                     <h4 class="all-names">Gia NitroBrew</h4>
                     <p class="paragraphs"><span class="job-title">CEO &amp; Founder |</span> Moonlights as a stylist
                         &amp; inspiration to all. She's here for a good time not a long time.</p>
@@ -102,7 +106,7 @@
             </div>
 
             <div id="about-image3">
-                <img src="images/aboutimage3.jpg">
+                <img src="images/aboutimage3.jpg" alt="Loraine Frap">
                 <div class="about-me-info">
                     <h4 class="all-names">Loraine Frap</h4>
                     <p class="paragraphs"><span class="job-title">Makeup Director |</span> Loves to make others feel
@@ -111,15 +115,17 @@
             </div>
 
         </div>
+        </main>
         <!--end-about-images-->
 
 
 
 
-    </div>
-    <!--end-container-->
+</div>
+<!--end-container-->
 
-    <script type="text/javascript" src="e-commerce.js"></script>
+<script type="text/javascript" src="e-commerce.js"></script>
 </body>
+</div>
 
 </html>

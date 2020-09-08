@@ -1,64 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Onyx | Contact</title>
+<html lang="en">
 
-        <link href="styles.css" rel="stylesheet">
-        <link href="normalize.css" rel="stylesheet">
+<head>
+    <title>Onyx | Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        
+    <link href="styles.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
 
-    </head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap"
+        rel="stylesheet">
 
-    <body class="contact-page">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+<div class="container">
+
+    <body class="contact-page">
 
         <form class="s-bar" action="">
             <input class="search" type="search">
             <i class="fa fa-search"></i>
-        </form><!--end-search-bar-->
+        </form>
+        <!--end-search-bar-->
 
         <div class="container">
 
 
 
             <header id="main-nav">
-    
+
                 <form class="s-bar" action="">
                     <input class="search" type="search">
                     <i class="fa fa-search"></i>
                 </form>
                 <!--end-search-bar-->
-    
+
                 <nav class="DT-nav">
                     <ul id="nav-list">
                         <li class="navbar-text"><a href="about.html">About</a></li>
                         <li class="navbar-text"><a href="products.html">Shop</a></li>
-                        <li class="navbar-text"><a href="homepage.html">Home</a></li>
+                        <li class="navbar-text"><a href="index.html">Home</a></li>
                         <li class="navbar-text"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
-    
+
         <header class="mobile-nav">
-    
+
             <form class="s-bar" action="">
                 <input class="search" type="search">
                 <i class="fa fa-search"></i>
             </form>
             <!--end-search-bar-->
-    
+
             <nav>
                 <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
                     <i class="fa fa-bars"></i>
                 </a>
                 <ul class="nav-content"></ul>
-    
+
                 <div id="navMobile">
-                    <li class="nav-links"><a href="homepage.html" class="active">Home</a></li>
+                    <li class="nav-links"><a href="index.html" class="active">Home</a></li>
                     <li class="nav-links"><a href="about.html">About</a></li>
                     <li class="nav-links"><a href="products.html">Shop</a></li>
                     <li class="nav-links"><a href="contact.html">Contact</a></li>
@@ -66,66 +74,73 @@
                 </div>
             </nav>
         </header>
-    </div>
-    
-
-    <div class="contact-container clearfix">
+</div>
 
 
-    <img class="contact-image" src="images/contactpic.jpg">
-    
+<div class="contact-container clearfix">
+    <main class="main-content" style="padding-left: 200px;">
+
+    <img class="contact-image" src="images/contactpic.jpg" alt="model">
+
 
     <form class="form-container">
         <fieldset>
             <legend id="contact">Questions? Write us!</legend>
             <div class="contact-text">
-            <label for="firstName">First Name:</label> 
-            <input type="text" id="firstName" placeholder=" Jane" required>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder=" Jane" required>
             </div>
             <div class="contact-text">
-            <label for="lastName">Last Name:</label> 
-            <input type="text" id="lastName" placeholder=" Doe" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder=" Doe" required>
             </div>
             <div class="contact-text">
-            <label for="email">Email:</label> 
-            <input type="text" id="email" placeholder=" gotmyvanson@aol.com" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder=" gotmyvanson@aol.com" required>
             </div>
             <div class="contact-text">
-            <label for="phone">Phone:</label> 
-            <input type="text" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" (305)123-4567" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" 305-123-4567"
+                    required>
             </div>
             <div class="contact-text">
-            <label class ="hdyhau" for="contact">Preferred contact method</label> 
-            <input id="Call" type="radio" name="contact">
-            <label for="Call">Call</label> 
-            <input id="text" type="radio" name="contact">
-            <label for="text">Text</label> 
-            <input id="email_c" type="radio" name="contact">
-            <label for="email_c">Email</label>
+                <label class="hdyhau" for="contact">Preferred contact method</label>
+                <input id="Call" type="radio" name="contact">
+                <label for="Call">Call</label>
+                <input id="text" type="radio" name="contact">
+                <label for="text">Text</label>
+                <input id="email_c" type="radio" name="contact">
+                <label for="email_c">Email</label>
             </div>
             <div class="contact-text">
-            <label class="hdyhau">How did you hear about us?</label>
-            <input id="instagram" type="checkbox"> <label for="instagram">Instagram</label>
-            <input id="Facebook" type="checkbox"> <label for="Facebook">Facebook</label>
-            <input id="Twitter" type="checkbox"> <label for="Twitter">Twitter</label>
-            <input id="wom" type="checkbox"> <label for="wom">Friends</label>
-            <input id="Other" type="checkbox"> <label for="Other">Other</label>
-            
+                <label class="hdyhau">How did you hear about us?</label>
+                <input id="instagram" type="checkbox"> <label for="instagram">Instagram</label>
+                <input id="Facebook" type="checkbox"> <label for="Facebook">Facebook</label>
+                <input id="Twitter" type="checkbox"> <label for="Twitter">Twitter</label>
+                <input id="wom" type="checkbox"> <label for="wom">Friends</label>
+                <input id="Other" type="checkbox"> <label for="Other">Other</label>
+
             </div>
             <div class="text-area">
-            Message:
-                <textarea placeholder="Smack some letters together! We can't wait to hear from you!" id="message"></textarea>
+                Message:
+                <textarea placeholder="Smack some letters together! We can't wait to hear from you!"
+                    id="message" required></textarea>
             </div>
             <div id="submit-reset">
-            <input type="submit" value="Save">
-            <input type="reset" value="Clear">
+                <input type="submit" value="Save">
+                <input type="reset" value="Clear">
             </div>
-            </fieldset>
         </fieldset>
-    </form> <!--end-contact-form-->
-    </div> <!--end-contact-container-->
+        </fieldset>
+    </form>
+    <!--end-contact-form-->
+</div>
+<!--end-contact-container-->
 
-</div> <!--end-container-->
+</div>
+</main>
+</div>
+<!--end container-->
 
 
 
@@ -139,5 +154,6 @@
 
 
 
-    </body>
+</body>
+
 </html>

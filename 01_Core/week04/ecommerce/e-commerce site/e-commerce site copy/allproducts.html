@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Onyx | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="onyx-logo">
+                <h1 class="main-logo"><a href="index.html">ONYX</a></h1>
+            </div>
+
+            <form class="s-bar" action="">
+                <input class="s-bar-input" type="search">
+                <i class="fa fa-search"></i>
+            </form>
+            <!--end-search-bar-->
+
+            <nav class="main_Nav">
+                <ul id="main_nav_list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="allproducts.html">Shop</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--end-main-nav-->
+
+            <nav class="mobile_Nav">
+                <h1 class="mobile-logo">ONYX</h1>
+                <img src="images/menu-icon.png" alt="menu" class="mobile_menu">
+                <ul id="mobile_Nav_List">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="allproducts.html">Shop</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--end-mobile-nav-->
+        </header>
+        <!--end main navigation bar-->
+
+
+
+        <main class="main-content">
+
+            <div class="sort-prods">
+                <form action="action">
+                    <label for="category">Sort by:</label>
+                    <select class="sort-by" name="category">
+                        <option value="category" selected disabled>Category</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="apparel">Apparel</option>
+                        <option value="leather-goods">Leather Goods</option>
+                        <option value="bags">Bags</option>
+                    </select>
+                    <select class="sort-by">
+                    <option value="price" selected disabled>Price</option>
+                    <option>0-$500</option>
+                    <option>$501-$999</option>
+                    <option>$1000-$1500</option>
+                    <option>$1501-$2000</option>
+                    <option>$2000+</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="all_products">
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/shoe1.jpg" alt="leather boots"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">2,400</span></h4>
+                        <p class="prod_description">Black faux leather goodness with an adventure pack.</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/shoe2.jpg" alt="pink converse"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">1,370</span></h4>
+                        <p class="prod_description">Stylish throwback to Converse.</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/jacket1.jpg" alt="gold jacket"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">3,000</span></h4>
+                        <p class="prod_description">The Gold Member of jackets. Groovy baby. </p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/jacket2.jpg" alt="black leather jacket"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">2,800</span></h4>
+                        <p class="prod_description">Biker gang inspired. Faux leather, lots of zipper.</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/bag1.jpg" alt="pink handbag"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">980</span></h4>
+                        <p class="prod_description">Legally pink vibes. Gold chain crossover, faux leather.</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/bag2.jpg" alt="brown handbag"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">1,150</span></h4>
+                        <p class="prod_description">Plain Jane, but goes with everythang.</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/bag3.jpg" alt="red handbag"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">2,200</span></h4>
+                        <p class="prod_description">Ch-Ch-Ch-Ch Cherry Bomb. Faux Leather.</p>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="product.html"><img src="images/bag4.jpg" alt="black bookbag"></a>
+                    <div class="prod-info">
+                        <h4>1,600</h4>
+                        <p class="prod_description">Spacious, Stylish, Chic.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--end-product-images-->
+
+
+
+        </main>
+    </div>
+    <!--end container-->
+
+    <script src="e-commerce.js"></script>
+
+</body>
+
+</html>

@@ -1,85 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Onyx | Products</title>
+<html lang="en">
 
-        <link href="styles.css" rel="stylesheet">
-        <link href="normalize.css" rel="stylesheet">
+<head>
+    <title>Onyx | Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Lobster+Two&family=Nosifer&display=swap" rel="stylesheet">
-    </head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
 
-    <body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Lobster+Two&family=Nosifer&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <main class="main-content" style="padding-left: 200px;">
 
         <form class="s-bar" action="">
             <input class="search" type="search">
             <i class="fa fa-search"></i>
-        </form><!--end-search-bar-->
+        </form>
+        <!--end-search-bar-->
 
-    <div class="container">
-		<header id="main-nav">
-			<nav>
-				<ul id="nav-list">
-					<li class="navbar-text"><a href="about.html">About</a></li>
-					<li class="navbar-text"><a href="products.html">Shop</a></li>
-                    <li class="navbar-text"><a href="homepage.html">Home</a></li>
-                    <li class="navbar-text"><a href="contact.html">Contact</a></li>
-                </ul>
-			</nav>
-		</header>
-    
+        <div class="container">
+            <header id="main-nav">
+                <nav>
+                    <ul id="nav-list">
+                        <li class="navbar-text"><a href="about.html">About</a></li>
+                        <li class="navbar-text"><a href="products.html">Shop</a></li>
+                        <li class="navbar-text"><a href="index.html">Home</a></li>
+                        <li class="navbar-text"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
 
-    <figure>
-        <img src="images/shoe1.jpg">
-    </figure>
-    
-    <section>
-    <p></p>
 
-    <div id="details">
-    <h4 id="product">Brushed Faux Leather &amp; Nylon Boots</h5>
-    <p class="paragraphs">These military-inspired leather combat boots come with a removable nylon pouch attached to the ankle with a strap.</p>
-        <ul class="paragraphs">
-            <li>Strap with removable nylon pouch</li>
-            <li>Rubber Sole</li>
-            <li>Badass Meter: 11/10</li>
-            <li>55mm rubber tread sole</li>
-            <li>Upper: Brushed faux leather &amp; nylon finish</li>
-        </ul>
+            <figure>
+                <img src="images/shoe1.jpg" alt="black leather boots">
+            </figure>
+
+            <section>
+                <p></p>
+
+                <div id="details">
+                    <h4 id="product">Brushed Faux Leather &amp; Nylon Boots</h4>
+                    <h2>$2,400 USD</h2>
+                        <p class="paragraphs">These military-inspired leather combat boots come with a removable nylon
+                            pouch attached to the ankle with a strap.</p>
+                        <ul class="paragraphs">
+                            <li>Strap with removable nylon pouch</li>
+                            <li>Rubber Sole</li>
+                            <li>Badass Meter: 11/10</li>
+                            <li>55mm rubber tread sole</li>
+                            <li>Upper: Brushed faux leather &amp; nylon finish</li>
+                        </ul>
+                </div>
+
+                <form action="/action_page.php">
+                    <label for="sizing">Size:</label>
+                    <select id="sizing" name="sizing">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </form>
+
+
+                <form action="/action_page.php">
+                    <label for="quantity">How many?</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    <input id="paragraphs" type="button" value="+ to cart">
+                </form>
+
+            </section>
+
+        </div>
+
     </div>
-
-    <form action="/action_page.php">
-        <label for="sizing">Size:</label>
-        <select id="sizing" name="sizing">
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        </select>
-    </form>
-
-
-    <form action="/action_page.php">
-        <label for="quantity">How many?</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="5">
-        <input id="paragraphs" type="button" value="+ to cart">
-    </form>
-
-    </section>
-
+</main>
     </div>
-
-</div>
-
+    <!--end container-->
 
 
 
 
 
-    </body>
+</body>
+
 </html>

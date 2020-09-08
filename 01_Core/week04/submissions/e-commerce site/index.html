@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Onyx | Home</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="styles.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
@@ -43,7 +44,7 @@
                 <ul id="nav-list">
                     <li class="navbar-text"><a href="about.html">About</a></li>
                     <li class="navbar-text"><a href="products.html">Shop</a></li>
-                    <li class="navbar-text"><a href="homepage.html">Home</a></li>
+                    <li class="navbar-text"><a id="logo" href="index.html"><img src="images/logo.png"></a></li>
                     <li class="navbar-text"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -59,7 +60,7 @@
         <!--end-search-bar-->
 
         <nav>
-            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()" aria-label="expand menu">
                 <i class="fa fa-bars"></i>
             </a>
             <ul class="nav-content"></ul>
@@ -73,16 +74,17 @@
             </div>
         </nav>
     </header>
-
+    
     <div class="slide-container">
+        <main class="main-content">
         <p id="lead">haute couture</p>
-        <span id=slider-image-1></span>
-        <span id=slider-image-2></span>
-        <span id=slider-image-3></span>
+        <span id=slider-image-1 alt="girls in hoodies"></span>
+        <span id=slider-image-2 alt="model in leather jacket"></span>
+        <span id=slider-image-3 alt="model in dessert"></span>
         <div class="image-container">
-            <img src="images/image1.jpg" class="slider-image">
-            <img src="images/image2.jpg" class="slider-image">
-            <img src="images/image3.jpg" class="slider-image">
+            <img src="images/image1.jpg" alt="girls in hoodies" class="slider-image">
+            <img src="images/image2.jpg" alt="model in leather" class="slider-image">
+            <img src="images/image3.jpg" alt="model in dessert" class="slider-image">
         </div>
 
         <div class=btn-images>
@@ -101,26 +103,26 @@
     <div class="featured-images">
 
         <div id="ft-pic-1">
-            <a href="proddetail.html"><img src="images/newftpic1.png"></a>
+            <a href="proddetail.html"><img src="images/newftpic1.png" alt="prada sneakers"></a>
             <div class="features">
                 <p class="paragraphs">990.00 $</p>
             </div>
         </div>
 
-        <div id="ft-pic-1">
-            <a href="proddetail.html"><img src="images/newftpic2.png"></a>
+        <div id="ft-pic-2">
+            <a href="proddetail.html"><img src="images/newftpic2.png" alt="prade hightops"></a>
             <div class="features">
                 <p class="paragraphs">760.00 $</p>
             </div>
         </div>
 
-        <div id="ft-pic-1">
-            <a href="proddetail.html"><img src="images/newftpic3.png"></a>
+        <div id="ft-pic-3">
+            <a href="proddetail.html"><img src="images/newftpic3.png" alt="prada sneaker platforms"></a>
             <div class="features">
                 <p class="paragraphs">830.00 $</p>
             </div>
         </div>
-
+    </main>
     </div>
     <!--end-featured-images-->
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Onyx | Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="normalize.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="onyx-logo">
+                <h1 class="main-logo"><a href="index.html">ONYX</a></h1>
+            </div>
+
+            <form class="s-bar" action="">
+                <input class="s-bar-input" type="search">
+                <i class="fa fa-search"></i>
+            </form>
+            <!--end-search-bar-->
+
+            <nav class="main_Nav">
+                <ul id="main_nav_list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="allproducts.html">Shop</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--end-main-nav-->
+
+            <nav class="mobile_Nav">
+                <h1 class="mobile-logo">ONYX</h1>
+                <img src="images/menu-icon.png" alt="menu" class="mobile_menu">
+                <ul id="mobile_Nav_List">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="allproducts.html">Shop</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--end-mobile-nav-->
+        </header>
+        <!--end main navigation bar-->
+
+        <main class="main-content">
+            <div class="contact-container">
+
+                <img class="contact-image" src="images/contactpic.jpg" alt="female model with onyx clothing">
+
+
+                <form class="form-container" method="POST">
+                    <fieldset>
+                        <legend id="contact">Questions? Write us!</legend>
+                        <div class="contact-input input-shadow">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" placeholder="Jane" required>
+                        </div>
+                        <div class="contact-input input-shadow">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" placeholder="Doe" required>
+                        </div>
+                        <div class="contact-input input-shadow">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="gotmyvanson@aol.com"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+                        <div class="contact-input input-shadow">
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder=" 305-123-4567" required>
+                        </div>
+                        <div class="contact-input">
+                            <label for="contact-method">Preferred contact method</label>
+                            <input id="Call" type="radio" name="contact-method">
+                            <label for="Call">Call</label>
+                            <input id="text" type="radio" name="contact-method">
+                            <label for="text">Text</label>
+                            <input id="email_c" type="radio" name="contact-method">
+                            <label for="email_c">Email</label>
+                        </div>
+                        <div class="contact-input">
+                            <label>How did you hear about us?</label>
+                            <input id="instagram" type="checkbox"> <label for="instagram">Instagram</label>
+                            <input id="Facebook" type="checkbox"> <label for="Facebook">Facebook</label>
+                            <input id="Twitter" type="checkbox"> <label for="Twitter">Twitter</label>
+                            <input id="wom" type="checkbox"> <label for="wom">Friends</label>
+                            <input id="Other" type="checkbox"> <label for="Other">Other</label>
+
+                        </div>
+                        <div class="contact-input input-shadow">
+                            <label class="message-box" for="message">Message:</label>
+                            <textarea placeholder="Smack some letters together! We can't wait to hear from you!"
+                                id="message" name="message" required></textarea>
+                        </div>
+                        <div id="submit-reset">
+                            <input type="submit" value="Save">
+                            <input type="reset" value="Clear">
+                        </div>
+                    </fieldset>
+                </form>
+                <!--end-contact-form-->
+            </div>
+
+
+
+        </main>
+    </div>
+    <!--end container-->
+
+    <script src="e-commerce.js"></script>
+
+</body>
+
+</html>

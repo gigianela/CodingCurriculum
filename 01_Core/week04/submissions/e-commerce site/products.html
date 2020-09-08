@@ -1,166 +1,177 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Onyx | Shop</title>
+<html lang="en">
 
-        <link href="styles.css" rel="stylesheet">
-        <link href="normalize.css" rel="stylesheet">
+<head>
+    <title>Onyx | Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    </head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
 
-    <body>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway+Dots&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
 
         <form class="s-bar" action="">
             <input class="search" type="search">
             <i class="fa fa-search"></i>
-        </form><!--end-search-bar-->
+        </form>
+        <!--end-search-bar-->
 
-<div class="sort-prods">
-    <form action="/action_page.php">
-        <label class="paragraphs" for="category">Go to:</label>
-        <select id="category" name="category">
-        <option value="shoes">Shoes</option>
-        <option value="apparel">Apparel</option>
-        <option value="leather-goods">Leather Goods</option>
-        <option value="bags">Bags</option>
-        </select>
-        <input type="button" value="Explore!">
-      </form>
-</div>
-
-
-    <div class="container">
-		<header id="main-nav">
-			<nav>
-				<ul id="nav-list">
-					<li class="navbar-text"><a href="about.html">About</a></li>
-					<li class="navbar-text"><a href="products.html">Shop</a></li>
-                    <li class="navbar-text"><a href="homepage.html">Home</a></li>
-                    <li class="navbar-text"><a href="contact.html">Contact</a></li>
-                </ul>
-			</nav>
-        </header>
-    
+        <div class="sort-prods">
+            <form action="/action_page.php">
+                <label class="paragraphs" for="category">Go to:</label>
+                <select id="category" name="category">
+                    <option value="shoes">Shoes</option>
+                    <option value="apparel">Apparel</option>
+                    <option value="leather-goods">Leather Goods</option>
+                    <option value="bags">Bags</option>
+                </select>
+                <input type="button" value="Explore!">
+            </form>
+        </div>
 
 
+        <div class="container">
+            <header id="main-nav">
+                <nav>
+                    <ul id="nav-list">
+                        <li class="navbar-text"><a href="about.html">About</a></li>
+                        <li class="navbar-text"><a href="products.html">Shop</a></li>
+                        <li class="navbar-text"><a href="index.html">Home</a></li>
+                        <li class="navbar-text"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-<div class="products">
 
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/shoe1.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">2,400</span></h4>
-                <p class="paragraphs">Black faux leather goodness with an adventure pack.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input id="paragraphs" type="Submit" value="Buy">
-                </form>
+
+
+            <div class="products">
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/shoe1.jpg" alt="leather boots"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">2,400</span></h4>
+                        <p class="paragraphs">Black faux leather goodness with an adventure pack.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input id="paragraphs" type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/shoe2.jpg" alt="pink converse"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">1,370</span></h4>
+                        <p class="paragraphs">Stylish throwback to Converse.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/jacket1.jpg" alt="gold jacket"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">3,000</span></h4>
+                        <p class="paragraphs">The Gold Member of jackets. Groovy baby. </p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/jacket2.jpg" alt="black leather jacket"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">2,800</span></h4>
+                        <p class="paragraphs">Biker gang inspired. Faux leather, lots of zipper.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/bag1.jpg" alt="pink handbag"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">980</span></h4>
+                        <p class="paragraphs">Legally pink vibes. Gold chain crossover, faux leather.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/bag2.jpg" alt="brown handbag"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">1,150</span></h4>
+                        <p class="paragraphs">Plain Jane, but goes with everythang.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/bag3.jpg" alt="red handbag"></a>
+                    <div class="prod-info">
+                        <h4><span id="price">2,200</span></h4>
+                        <p class="paragraphs">Ch-Ch-Ch-Ch Cherry Bomb. Faux Leather.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="prod">
+                    <a href="proddetail.html"><img src="images/bag4.jpg" alt="black bookbag"></a>
+                    <div class="prod-info">
+                        <h4>1,600</h4>
+                        <p class="paragraphs">Spacious, Stylish, Chic.</p>
+                        <form action="/action_page.php">
+                            <label for="quantity">How many?</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <input type="Submit" value="Buy">
+                        </form>
+                    </div>
+                </div>
+
             </div>
+            <!--end-product-images-->
+
+
+
+
+
+        </div>
     </div>
-            
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/shoe2.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">1,370</span></h4>
-                <p class="paragraphs">Stylish throwback to Converse.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-            
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/jacket1.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">3,000</span></h4>
-                <p class="paragraphs">The Gold Member of jackets. Groovy baby. </p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/jacket2.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">2,800</span></h4>
-                <p class="paragraphs">Biker gang inspired. Faux leather, lots of zipper.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-            
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/bag1.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">980</span></h4>
-                <p class="paragraphs">Legally pink vibes. Gold chain crossover, faux leather.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-            
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/bag2.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">1,150</span></h4>
-                <p class="paragraphs">Plain Jane, but goes with everythang.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/bag3.jpg"></a>
-            <div class="prod-info">
-                <h4><span id="price">2,200</span></h4>
-                <p class="paragraphs">Ch-Ch-Ch-Ch Cherry Bomb. Faux Leather.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-            
-    <div class="prod">
-        <a href="proddetail.html"><img src="images/bag4.jpg"></a>
-            <div class="prod-info">
-                <h4>1,600</h4>
-                <p class="paragraphs">Spacious, Stylish, Chic.</p>
-                <form action="/action_page.php">
-                    <label for="quantity">How many?</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                    <input type="Submit" value="Buy">
-                </form>
-            </div>
-    </div>
-            
-</div> <!--end-product-images-->
+    <!--end-container-->
 
 
+</body>
 
-
-
-
-</div> <!--end-container-->
-
-
-    </body>
 </html>
